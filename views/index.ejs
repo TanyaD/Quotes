@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <title>Quotes</title>
+
+    </head>
+    <body>
+        <h3>Here are some awesome quotes!</h3>
+        <% users.forEach(function (user) { %>
+            <p>
+                "<%=user.quote %>"
+                <br>
+                -<%= user.name %> at <%=user.updatedAt%>
+            </p>
+        <% }) %>
+
+
+
+       
+    </body>
+</html>
